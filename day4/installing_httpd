@@ -1,0 +1,401 @@
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-13-104 ~]$ git clone ^[[200~git@github.com:kaushalacts/DevOps-22days-challenge.git~
+-bash: git: command not found
+[ec2-user@ip-172-31-13-104 ~]$ git clone https://github.com/kaushalacts/DevOps-22days-challenge.git~
+-bash: git: command not found
+[ec2-user@ip-172-31-13-104 ~]$ sudo yum update -y  # For Amazon Linux 2 (default in most EC2 instances)
+Amazon Linux 2023 Kernel Livepatch repository                                                                         125 kB/s |  14 kB     00:00    
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-172-31-13-104 ~]$ sudo yum install git -y
+Last metadata expiration check: 0:00:26 ago on Mon Mar  3 10:43:53 2025.
+Dependencies resolved.
+======================================================================================================================================================
+ Package                              Architecture               Version                                        Repository                       Size
+======================================================================================================================================================
+Installing:
+ git                                  x86_64                     2.47.1-1.amzn2023.0.2                          amazonlinux                      54 k
+Installing dependencies:
+ git-core                             x86_64                     2.47.1-1.amzn2023.0.2                          amazonlinux                     4.7 M
+ git-core-doc                         noarch                     2.47.1-1.amzn2023.0.2                          amazonlinux                     2.8 M
+ perl-Error                           noarch                     1:0.17029-5.amzn2023.0.2                       amazonlinux                      41 k
+ perl-File-Find                       noarch                     1.37-477.amzn2023.0.6                          amazonlinux                      26 k
+ perl-Git                             noarch                     2.47.1-1.amzn2023.0.2                          amazonlinux                      42 k
+ perl-TermReadKey                     x86_64                     2.38-9.amzn2023.0.2                            amazonlinux                      36 k
+ perl-lib                             x86_64                     0.65-477.amzn2023.0.6                          amazonlinux                      15 k
+
+Transaction Summary
+======================================================================================================================================================
+Install  8 Packages
+
+Total download size: 7.7 M
+Installed size: 37 M
+Downloading Packages:
+(1/8): git-2.47.1-1.amzn2023.0.2.x86_64.rpm                                                                           899 kB/s |  54 kB     00:00    
+(2/8): perl-Error-0.17029-5.amzn2023.0.2.noarch.rpm                                                                   2.2 MB/s |  41 kB     00:00    
+(3/8): perl-File-Find-1.37-477.amzn2023.0.6.noarch.rpm                                                                1.6 MB/s |  26 kB     00:00    
+(4/8): perl-Git-2.47.1-1.amzn2023.0.2.noarch.rpm                                                                      2.2 MB/s |  42 kB     00:00    
+(5/8): git-core-doc-2.47.1-1.amzn2023.0.2.noarch.rpm                                                                   20 MB/s | 2.8 MB     00:00    
+(6/8): git-core-2.47.1-1.amzn2023.0.2.x86_64.rpm                                                                       29 MB/s | 4.7 MB     00:00    
+(7/8): perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64.rpm                                                                747 kB/s |  36 kB     00:00    
+(8/8): perl-lib-0.65-477.amzn2023.0.6.x86_64.rpm                                                                      485 kB/s |  15 kB     00:00    
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                  38 MB/s | 7.7 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                              1/1 
+  Installing       : git-core-2.47.1-1.amzn2023.0.2.x86_64                                                                                        1/8 
+  Installing       : git-core-doc-2.47.1-1.amzn2023.0.2.noarch                                                                                    2/8 
+  Installing       : perl-lib-0.65-477.amzn2023.0.6.x86_64                                                                                        3/8 
+  Installing       : perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64                                                                                  4/8 
+  Installing       : perl-File-Find-1.37-477.amzn2023.0.6.noarch                                                                                  5/8 
+  Installing       : perl-Error-1:0.17029-5.amzn2023.0.2.noarch                                                                                   6/8 
+  Installing       : perl-Git-2.47.1-1.amzn2023.0.2.noarch                                                                                        7/8 
+  Installing       : git-2.47.1-1.amzn2023.0.2.x86_64                                                                                             8/8 
+  Running scriptlet: git-2.47.1-1.amzn2023.0.2.x86_64                                                                                             8/8 
+  Verifying        : git-2.47.1-1.amzn2023.0.2.x86_64                                                                                             1/8 
+  Verifying        : git-core-2.47.1-1.amzn2023.0.2.x86_64                                                                                        2/8 
+  Verifying        : git-core-doc-2.47.1-1.amzn2023.0.2.noarch                                                                                    3/8 
+  Verifying        : perl-Error-1:0.17029-5.amzn2023.0.2.noarch                                                                                   4/8 
+  Verifying        : perl-File-Find-1.37-477.amzn2023.0.6.noarch                                                                                  5/8 
+  Verifying        : perl-Git-2.47.1-1.amzn2023.0.2.noarch                                                                                        6/8 
+  Verifying        : perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64                                                                                  7/8 
+  Verifying        : perl-lib-0.65-477.amzn2023.0.6.x86_64                                                                                        8/8 
+
+Installed:
+  git-2.47.1-1.amzn2023.0.2.x86_64                  git-core-2.47.1-1.amzn2023.0.2.x86_64             git-core-doc-2.47.1-1.amzn2023.0.2.noarch      
+  perl-Error-1:0.17029-5.amzn2023.0.2.noarch        perl-File-Find-1.37-477.amzn2023.0.6.noarch       perl-Git-2.47.1-1.amzn2023.0.2.noarch          
+  perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64       perl-lib-0.65-477.amzn2023.0.6.x86_64            
+
+Complete!
+[ec2-user@ip-172-31-13-104 ~]$ git --version
+git version 2.47.1
+[ec2-user@ip-172-31-13-104 ~]$ git@github.com:kaushalacts/DevOps-22days-challenge.git
+-bash: git@github.com:kaushalacts/DevOps-22days-challenge.git: No such file or directory
+[ec2-user@ip-172-31-13-104 ~]$ git clone git@github.com:kaushalacts/DevOps-22days-challenge.git
+Cloning into 'DevOps-22days-challenge'...
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[ec2-user@ip-172-31-13-104 ~]$ ls ~/.ssh
+authorized_keys  known_hosts
+[ec2-user@ip-172-31-13-104 ~]$ ssh-keygen -t rsa -b 4096 -C "kaushalkishoremnt2000@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ec2-user/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/ec2-user/.ssh/id_rsa
+Your public key has been saved in /home/ec2-user/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:Rw3GdevGKhyugBvCGGY7sDbqV5LxwNr0AL//c3fHNec kaushalkishoremnt2000@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|         .o.. .  |
+| .       ..o . . |
+|  +       . . .  |
+|   B     .   o   |
+|oo+ O   S o   +  |
+|+*.= =   + . o .o|
+|o=o * .   + . ..+|
+|o oo + o o o . oE|
+|o.. . ..+ . . .  |
++----[SHA256]-----+
+[ec2-user@ip-172-31-13-104 ~]$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCd5U/3yTny+Y4jlqo11d4U7M9nZPjcDfLIHMdl/DYWPl0pRqeHX+mWbH6hJWEQko5Vsh/oN7iCQjiHAyzWyzqValQrzeiGhrJz8XOHPDP2RZ14v+px0rDPiKxS8fu3lyGeKYzyAoAw+WjTxPbr8R0TLPFblxPLlYVUNBQietZDPlrvzH0C17ntqScl0EI7cYMTY+WOnXpdud0SmZO06VI5pa5TZ3LP82aB3wYAGFNnxZHpnoKa2gBx9Mbqe/VXoaBpzSR5ijagFw3SG+IpV6UPT8taT+o2GWNCPtV6VQxLWFPwEqZD/O/vom/MgBSZZ5Z38E2ZCnj+LX4fJMor3L0/2ArrGbsTAz7CXTa38Kwh52JH9nFp+P4+/ZktNaVglgtl811i2XvC6f3k9CIp7bQweYSFQ/ETXWLAuAc8rS8eYJsRtaOd4t5ziJzkxASr6VEyE9e97AAR9UAwBeWqrwinYNBv6fCLqgHlRpCjCylDx4MbEudJUYfPu+xmluw3skVC5uCFVlzEcj9WpbLxN+YBsjV/xpS2osWL8bVUBqP41D44qyuSmdWx/D/AjLcPYoSxpzSbp0YpJ2L+ugCzcRMXh3cIviM0Ns/H8G9iZFLp/jqv6Pj7wvt/4joeAoVKqlHgiqch+Xxx5u93jzDUBuduLK6nSVCwcx5TJo13qUtZPw== kaushalkishoremnt2000@gmail.com
+[ec2-user@ip-172-31-13-104 ~]$ git clone git@github.com:kaushalacts/DevOps-22days-challenge.git
+Cloning into 'DevOps-22days-challenge'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+[ec2-user@ip-172-31-13-104 ~]$ ls
+DevOps-22days-challenge
+[ec2-user@ip-172-31-13-104 ~]$ cd DevOps-22days-challenge
+[ec2-user@ip-172-31-13-104 DevOps-22days-challenge]$ ls
+README.md
+[ec2-user@ip-172-31-13-104 DevOps-22days-challenge]$ mkdir day4
+[ec2-user@ip-172-31-13-104 DevOps-22days-challenge]$ cd day4
+[ec2-user@ip-172-31-13-104 day4]$ ls 
+[ec2-user@ip-172-31-13-104 day4]$ sudo su root 
+[root@ip-172-31-13-104 day4]# yum install httpd
+Last metadata expiration check: 0:07:30 ago on Mon Mar  3 10:43:53 2025.
+Dependencies resolved.
+======================================================================================================================================================
+ Package                                 Architecture               Version                                     Repository                       Size
+======================================================================================================================================================
+Installing:
+ httpd                                   x86_64                     2.4.62-1.amzn2023                           amazonlinux                      48 k
+Installing dependencies:
+ apr                                     x86_64                     1.7.5-1.amzn2023.0.4                        amazonlinux                     129 k
+ apr-util                                x86_64                     1.6.3-1.amzn2023.0.1                        amazonlinux                      98 k
+ generic-logos-httpd                     noarch                     18.0.0-12.amzn2023.0.3                      amazonlinux                      19 k
+ httpd-core                              x86_64                     2.4.62-1.amzn2023                           amazonlinux                     1.4 M
+ httpd-filesystem                        noarch                     2.4.62-1.amzn2023                           amazonlinux                      14 k
+ httpd-tools                             x86_64                     2.4.62-1.amzn2023                           amazonlinux                      81 k
+ libbrotli                               x86_64                     1.0.9-4.amzn2023.0.2                        amazonlinux                     315 k
+ mailcap                                 noarch                     2.1.49-3.amzn2023.0.3                       amazonlinux                      33 k
+Installing weak dependencies:
+ apr-util-openssl                        x86_64                     1.6.3-1.amzn2023.0.1                        amazonlinux                      17 k
+ mod_http2                               x86_64                     2.0.27-1.amzn2023.0.3                       amazonlinux                     166 k
+ mod_lua                                 x86_64                     2.4.62-1.amzn2023                           amazonlinux                      61 k
+
+Transaction Summary
+======================================================================================================================================================
+Install  12 Packages
+
+Total download size: 2.3 M
+Installed size: 6.9 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/12): apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64.rpm                                                              501 kB/s |  17 kB     00:00    
+(2/12): apr-1.7.5-1.amzn2023.0.4.x86_64.rpm                                                                           3.1 MB/s | 129 kB     00:00    
+(3/12): apr-util-1.6.3-1.amzn2023.0.1.x86_64.rpm                                                                      2.2 MB/s |  98 kB     00:00    
+(4/12): generic-logos-httpd-18.0.0-12.amzn2023.0.3.noarch.rpm                                                         1.0 MB/s |  19 kB     00:00    
+(5/12): httpd-2.4.62-1.amzn2023.x86_64.rpm                                                                            2.4 MB/s |  48 kB     00:00    
+(6/12): httpd-core-2.4.62-1.amzn2023.x86_64.rpm                                                                        46 MB/s | 1.4 MB     00:00    
+(7/12): httpd-filesystem-2.4.62-1.amzn2023.noarch.rpm                                                                 665 kB/s |  14 kB     00:00    
+(8/12): mailcap-2.1.49-3.amzn2023.0.3.noarch.rpm                                                                      2.0 MB/s |  33 kB     00:00    
+(9/12): httpd-tools-2.4.62-1.amzn2023.x86_64.rpm                                                                      2.5 MB/s |  81 kB     00:00    
+(10/12): libbrotli-1.0.9-4.amzn2023.0.2.x86_64.rpm                                                                     11 MB/s | 315 kB     00:00    
+(11/12): mod_http2-2.0.27-1.amzn2023.0.3.x86_64.rpm                                                                   8.0 MB/s | 166 kB     00:00    
+(12/12): mod_lua-2.4.62-1.amzn2023.x86_64.rpm                                                                         3.2 MB/s |  61 kB     00:00    
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                  16 MB/s | 2.3 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                              1/1 
+  Installing       : apr-1.7.5-1.amzn2023.0.4.x86_64                                                                                             1/12 
+  Installing       : apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64                                                                                2/12 
+  Installing       : apr-util-1.6.3-1.amzn2023.0.1.x86_64                                                                                        3/12 
+  Installing       : mailcap-2.1.49-3.amzn2023.0.3.noarch                                                                                        4/12 
+  Installing       : httpd-tools-2.4.62-1.amzn2023.x86_64                                                                                        5/12 
+  Installing       : libbrotli-1.0.9-4.amzn2023.0.2.x86_64                                                                                       6/12 
+  Running scriptlet: httpd-filesystem-2.4.62-1.amzn2023.noarch                                                                                   7/12 
+  Installing       : httpd-filesystem-2.4.62-1.amzn2023.noarch                                                                                   7/12 
+  Installing       : httpd-core-2.4.62-1.amzn2023.x86_64                                                                                         8/12 
+  Installing       : mod_http2-2.0.27-1.amzn2023.0.3.x86_64                                                                                      9/12 
+  Installing       : mod_lua-2.4.62-1.amzn2023.x86_64                                                                                           10/12 
+  Installing       : generic-logos-httpd-18.0.0-12.amzn2023.0.3.noarch                                                                          11/12 
+  Installing       : httpd-2.4.62-1.amzn2023.x86_64                                                                                             12/12 
+  Running scriptlet: httpd-2.4.62-1.amzn2023.x86_64                                                                                             12/12 
+  Verifying        : apr-1.7.5-1.amzn2023.0.4.x86_64                                                                                             1/12 
+  Verifying        : apr-util-1.6.3-1.amzn2023.0.1.x86_64                                                                                        2/12 
+  Verifying        : apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64                                                                                3/12 
+  Verifying        : generic-logos-httpd-18.0.0-12.amzn2023.0.3.noarch                                                                           4/12 
+  Verifying        : httpd-2.4.62-1.amzn2023.x86_64                                                                                              5/12 
+  Verifying        : httpd-core-2.4.62-1.amzn2023.x86_64                                                                                         6/12 
+  Verifying        : httpd-filesystem-2.4.62-1.amzn2023.noarch                                                                                   7/12 
+  Verifying        : httpd-tools-2.4.62-1.amzn2023.x86_64                                                                                        8/12 
+  Verifying        : libbrotli-1.0.9-4.amzn2023.0.2.x86_64                                                                                       9/12 
+  Verifying        : mailcap-2.1.49-3.amzn2023.0.3.noarch                                                                                       10/12 
+  Verifying        : mod_http2-2.0.27-1.amzn2023.0.3.x86_64                                                                                     11/12 
+  Verifying        : mod_lua-2.4.62-1.amzn2023.x86_64                                                                                           12/12 
+
+Installed:
+  apr-1.7.5-1.amzn2023.0.4.x86_64                        apr-util-1.6.3-1.amzn2023.0.1.x86_64        apr-util-openssl-1.6.3-1.amzn2023.0.1.x86_64     
+  generic-logos-httpd-18.0.0-12.amzn2023.0.3.noarch      httpd-2.4.62-1.amzn2023.x86_64              httpd-core-2.4.62-1.amzn2023.x86_64              
+  httpd-filesystem-2.4.62-1.amzn2023.noarch              httpd-tools-2.4.62-1.amzn2023.x86_64        libbrotli-1.0.9-4.amzn2023.0.2.x86_64            
+  mailcap-2.1.49-3.amzn2023.0.3.noarch                   mod_http2-2.0.27-1.amzn2023.0.3.x86_64      mod_lua-2.4.62-1.amzn2023.x86_64                 
+
+Complete!
+[root@ip-172-31-13-104 day4]# start httpd
+bash: start: command not found
+[root@ip-172-31-13-104 day4]# startctl httpd
+bash: startctl: command not found
+[root@ip-172-31-13-104 day4]# systemctl start httpd
+[root@ip-172-31-13-104 day4]# ls
+[root@ip-172-31-13-104 day4]# cd /var/www/html
+[root@ip-172-31-13-104 html]# vi index.html
+[root@ip-172-31-13-104 html]# ls
+index.html
+[root@ip-172-31-13-104 html]# systemctl start httpd
+[root@ip-172-31-13-104 html]# cd /var/log/httpd/
+[root@ip-172-31-13-104 httpd]# ls
+access_log  error_log
+[root@ip-172-31-13-104 httpd]# cat access_log
+[root@ip-172-31-13-104 httpd]# ls
+access_log  error_log
+[root@ip-172-31-13-104 httpd]# cat access_log
+[root@ip-172-31-13-104 httpd]# cat access_log
+[root@ip-172-31-13-104 httpd]# cat error_log
+[Mon Mar 03 10:52:06.166537 2025] [suexec:notice] [pid 27510:tid 27510] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Mar 03 10:52:06.186928 2025] [lbmethod_heartbeat:notice] [pid 27510:tid 27510] AH02282: No slotmem from mod_heartmonitor
+[Mon Mar 03 10:52:06.187538 2025] [systemd:notice] [pid 27510:tid 27510] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Mon Mar 03 10:52:06.193387 2025] [mpm_event:notice] [pid 27510:tid 27510] AH00489: Apache/2.4.62 (Amazon Linux) configured -- resuming normal operations
+[Mon Mar 03 10:52:06.193400 2025] [core:notice] [pid 27510:tid 27510] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[root@ip-172-31-13-104 httpd]# systemctl start httpd
+[root@ip-172-31-13-104 httpd]# ls
+access_log  error_log
+[root@ip-172-31-13-104 httpd]# git commit -m "installing server"
+fatal: not a git repository (or any of the parent directories): .git
+[root@ip-172-31-13-104 httpd]# cd ..
+[root@ip-172-31-13-104 log]# cd ..
+[root@ip-172-31-13-104 var]# cd ..
+[root@ip-172-31-13-104 /]# ls
+bin  boot  dev  etc  home  lib  lib64  local  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+[root@ip-172-31-13-104 /]# cd ..
+[root@ip-172-31-13-104 /]# cd /ec2/user
+bash: cd: /ec2/user: No such file or directory
+[root@ip-172-31-13-104 /]# sudo su ec2-user
+[ec2-user@ip-172-31-13-104 /]$ ls
+bin  boot  dev  etc  home  lib  lib64  local  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+[ec2-user@ip-172-31-13-104 /]$ cd DevOps-22days-challenge
+bash: cd: DevOps-22days-challenge: No such file or directory
+[ec2-user@ip-172-31-13-104 /]$ cd ~
+[ec2-user@ip-172-31-13-104 ~]$ ls
+DevOps-22days-challenge
+[ec2-user@ip-172-31-13-104 ~]$ cd DevOps-22days-challenge/
+[ec2-user@ip-172-31-13-104 DevOps-22days-challenge]$ ls
+README.md  day4
+[ec2-user@ip-172-31-13-104 DevOps-22days-challenge]$ cd day4/
+[ec2-user@ip-172-31-13-104 day4]$ ls
+[ec2-user@ip-172-31-13-104 day4]$ yum install httpd
+Error: This command has to be run with superuser privileges (under the root user on most systems).
+[ec2-user@ip-172-31-13-104 day4]$ sudo su root
+[root@ip-172-31-13-104 day4]# ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  1.7 106204 17280 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd --switched-root --system --deserialize=32
+root           2  0.0  0.0      0     0 ?        S    10:40   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   10:40   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   10:40   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   10:40   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   10:40   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   10:40   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   10:40   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        I    10:40   0:00 [rcu_tasks_kthread]
+root          12  0.0  0.0      0     0 ?        I    10:40   0:00 [rcu_tasks_rude_kthread]
+root          13  0.0  0.0      0     0 ?        I    10:40   0:00 [rcu_tasks_trace_kthread]
+root          14  0.0  0.0      0     0 ?        S    10:40   0:00 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    10:40   0:00 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    10:40   0:00 [migration/0]
+root          18  0.0  0.0      0     0 ?        S    10:40   0:00 [cpuhp/0]
+root          20  0.0  0.0      0     0 ?        S    10:40   0:00 [kdevtmpfs]
+root          21  0.0  0.0      0     0 ?        I<   10:40   0:00 [inet_frag_wq]
+root          22  0.0  0.0      0     0 ?        S    10:40   0:00 [kauditd]
+root          23  0.0  0.0      0     0 ?        S    10:40   0:00 [khungtaskd]
+root          24  0.0  0.0      0     0 ?        S    10:40   0:00 [oom_reaper]
+root          26  0.0  0.0      0     0 ?        I    10:40   0:00 [kworker/u30:2-events_unbound]
+root          27  0.0  0.0      0     0 ?        I<   10:40   0:00 [writeback]
+root          28  0.0  0.0      0     0 ?        S    10:40   0:00 [kcompactd0]
+root          29  0.0  0.0      0     0 ?        SN   10:40   0:00 [khugepaged]
+root          30  0.0  0.0      0     0 ?        I<   10:40   0:00 [cryptd]
+root          31  0.0  0.0      0     0 ?        I<   10:40   0:00 [kintegrityd]
+root          32  0.0  0.0      0     0 ?        I<   10:40   0:00 [kblockd]
+root          33  0.0  0.0      0     0 ?        I<   10:40   0:00 [blkcg_punt_bio]
+root          34  0.0  0.0      0     0 ?        S    10:40   0:00 [xen-balloon]
+root          35  0.0  0.0      0     0 ?        I<   10:40   0:00 [tpm_dev_wq]
+root          36  0.0  0.0      0     0 ?        I<   10:40   0:00 [md]
+root          37  0.0  0.0      0     0 ?        I<   10:40   0:00 [edac-poller]
+root          38  0.0  0.0      0     0 ?        S    10:40   0:00 [watchdogd]
+root          39  0.0  0.0      0     0 ?        I<   10:40   0:00 [kworker/0:1H-kblockd]
+root          73  0.0  0.0      0     0 ?        S    10:40   0:00 [kswapd0]
+root          76  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfsalloc]
+root          77  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs_mru_cache]
+root          80  0.0  0.0      0     0 ?        I<   10:40   0:00 [kthrotld]
+root          95  0.0  0.0      0     0 ?        S    10:40   0:00 [xenbus]
+root          96  0.0  0.0      0     0 ?        S    10:40   0:00 [xenwatch]
+root         135  0.0  0.0      0     0 ?        I<   10:40   0:00 [nvme-wq]
+root         137  0.0  0.0      0     0 ?        I<   10:40   0:00 [nvme-reset-wq]
+root         139  0.0  0.0      0     0 ?        I<   10:40   0:00 [nvme-delete-wq]
+root         165  0.0  0.0      0     0 ?        I<   10:40   0:00 [mld]
+root         166  0.0  0.0      0     0 ?        I<   10:40   0:00 [ipv6_addrconf]
+root         184  0.0  0.0      0     0 ?        I<   10:40   0:00 [kstrp]
+root         193  0.0  0.0      0     0 ?        I<   10:40   0:00 [zswap-shrink]
+root         194  0.0  0.0      0     0 ?        I<   10:40   0:00 [kworker/u31:0]
+root        1039  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs-buf/xvda1]
+root        1040  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs-conv/xvda1]
+root        1041  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs-reclaim/xvd]
+root        1042  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs-blockgc/xvd]
+root        1043  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs-inodegc/xvd]
+root        1044  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs-log/xvda1]
+root        1045  0.0  0.0      0     0 ?        I<   10:40   0:00 [xfs-cil/xvda1]
+root        1046  0.0  0.0      0     0 ?        S    10:40   0:00 [xfsaild/xvda1]
+root        1093  0.0  1.5  52544 14936 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd-journald
+root        1765  0.0  1.1  31176 11440 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd-udevd
+systemd+    1778  0.0  1.4  21236 14512 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd-resolved
+root        1787  0.0  0.2  20228  2332 ?        S<sl 10:40   0:00 /sbin/auditd
+root        1915  0.0  0.0      0     0 ?        I<   10:40   0:00 [rpciod]
+root        1916  0.0  0.0      0     0 ?        I<   10:40   0:00 [xprtiod]
+root        1919  0.0  0.0      0     0 ?        I<   10:40   0:00 [ata_sff]
+root        1940  0.0  0.0      0     0 ?        S    10:40   0:00 [scsi_eh_0]
+root        1941  0.0  0.0      0     0 ?        I<   10:40   0:00 [scsi_tmf_0]
+root        1945  0.0  0.0      0     0 ?        S    10:40   0:00 [scsi_eh_1]
+root        1947  0.0  0.0      0     0 ?        I<   10:40   0:00 [scsi_tmf_1]
+root        1961  0.0  0.6  15300  6436 ?        Ss   10:40   0:00 /usr/bin/systemd-inhibit --what=handle-suspend-key:handle-hibernate-key --who=noah 
+libstor+    1964  0.0  0.2   2760  1972 ?        Ss   10:40   0:00 /usr/bin/lsmd -d
+root        1966  0.6  0.6  89008  5940 ?        Ssl  10:40   0:09 /usr/sbin/rngd -f -x pkcs11 -x nist
+root        1968  0.0  0.7  15784  7704 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd-homed
+root        1969  0.0  1.0  17640  9768 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd-logind
+dbus        1973  0.0  0.3   8352  3864 ?        Ss   10:40   0:00 /usr/bin/dbus-broker-launch --scope system --audit
+systemd+    1974  0.0  0.9 235880  9708 ?        Ss   10:40   0:00 /usr/lib/systemd/systemd-networkd
+dbus        1977  0.0  0.3   5400  3088 ?        S    10:40   0:00 dbus-broker --log 4 --controller 9 --machine-id ec2336d3d2931cdf6c065aba19a65a31 --
+root        1996  0.0  0.1   2672  1144 ?        S    10:40   0:00 /usr/sbin/acpid -f
+root        1999  0.0  0.3 281028  3512 ?        Ssl  10:40   0:00 /usr/sbin/gssproxy -D
+root        2165  0.0  1.8 1242284 18172 ?       Ssl  10:40   0:00 /usr/bin/amazon-ssm-agent
+root        2169  0.0  0.8  13316  7892 ?        Ss   10:40   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root        2176  0.0  0.2   4732  2580 ?        Ss   10:40   0:00 /usr/sbin/atd -f
+root        2180  0.0  0.1 221348  1080 tty1     Ss+  10:40   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root        2181  0.0  0.1 221392  1080 ttyS0    Ss+  10:40   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 - vt220
+chrony      2198  0.0  0.3  86520  3172 ?        S    10:40   0:00 /usr/sbin/chronyd -F 2
+root        2243  0.0  1.0  14772  9928 ?        Ss   10:41   0:00 sshd: ec2-user [priv]
+root        2576  0.0  0.6  15300  6776 ?        Ss   10:41   0:00 /usr/lib/systemd/systemd-userdbd
+ec2-user    2581  0.0  1.3  20404 13200 ?        Ss   10:41   0:00 /usr/lib/systemd/systemd --user
+ec2-user    2583  0.0  0.6  25132  6520 ?        S    10:41   0:00 (sd-pam)
+ec2-user    2590  0.0  0.6  14772  6320 ?        S    10:41   0:00 sshd: ec2-user@pts/0
+ec2-user    2591  0.0  0.5 224032  4948 pts/0    Ss   10:41   0:00 -bash
+root       27101  0.0  0.0      0     0 ?        I    10:50   0:00 [kworker/0:2-cgroup_destroy]
+root       27140  0.0  0.8 233296  7872 pts/0    S+   10:51   0:00 sudo su root
+root       27142  0.0  0.2 233296  2528 pts/1    Ss   10:51   0:00 sudo su root
+root       27143  0.0  0.4 225208  4444 pts/1    S    10:51   0:00 su root
+root       27144  0.0  0.5 224064  4932 pts/1    S    10:51   0:00 bash
+root       27510  0.0  1.1  17368 10816 ?        Ss   10:52   0:00 /usr/sbin/httpd -DFOREGROUND
+apache     27529  0.0  0.3  17024  3552 ?        S    10:52   0:00 /usr/sbin/httpd -DFOREGROUND
+apache     27530  0.0  0.7 1248892 7632 ?        Sl   10:52   0:00 /usr/sbin/httpd -DFOREGROUND
+apache     27531  0.0  0.7 1084988 7632 ?        Sl   10:52   0:00 /usr/sbin/httpd -DFOREGROUND
+apache     27532  0.0  0.7 1084988 7632 ?        Sl   10:52   0:00 /usr/sbin/httpd -DFOREGROUND
+root       27996  0.0  0.0      0     0 ?        I    10:57   0:00 [kworker/0:0-events]
+root       28119  0.0  0.0      0     0 ?        I    11:00   0:00 [kworker/u30:1-events_unbound]
+root       28368  0.0  0.0      0     0 ?        I    11:03   0:00 [kworker/0:1-cgroup_destroy]
+root       28369  0.0  0.8 233296  7856 pts/1    S+   11:04   0:00 sudo su ec2-user
+root       28371  0.0  0.2 233296  2524 pts/2    Ss   11:04   0:00 sudo su ec2-user
+root       28372  0.0  0.4 225208  4436 pts/2    S    11:04   0:00 su ec2-user
+ec2-user   28373  0.0  0.5 224068  4984 pts/2    S    11:04   0:00 bash
+root       28515  0.0  0.7  15712  7400 ?        S    11:06   0:00 systemd-userwork: waiting...
+root       28516  0.0  0.6  15656  6500 ?        S    11:06   0:00 systemd-userwork: waiting...
+root       28517  0.0  0.7  15712  7412 ?        S    11:06   0:00 systemd-userwork: waiting...
+root       28577  0.0  0.0      0     0 ?        I    11:07   0:00 [kworker/u30:0]
+root       28578  0.2  0.8 233296  7876 pts/2    S+   11:07   0:00 sudo su root
+root       28580  0.0  0.2 233296  2532 pts/3    Ss   11:07   0:00 sudo su root
+root       28581  0.0  0.4 225208  4424 pts/3    S    11:07   0:00 su root
+root       28582  0.2  0.5 224064  4896 pts/3    S    11:07   0:00 bash
+root       28599  0.0  0.2 223492  2724 pts/3    R+   11:07   0:00 ps -aux
+[root@ip-172-31-13-104 day4]# netstat -tnlp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2169/sshd: /usr/sbi 
+tcp6       0      0 :::22                   :::*                    LISTEN      2169/sshd: /usr/sbi 
+tcp6       0      0 :::80                   :::*                    LISTEN      27510/httpd    
