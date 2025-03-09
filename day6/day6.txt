@@ -1,0 +1,342 @@
+[root@ip-172-31-13-104 day6]# history
+    1  ps -aux
+    2  netstat -tnlp
+    3  sudo su ec2-user
+    4  yum install httpd
+    5  start httpd
+    6  startctl httpd
+    7  systemctl start httpd
+    8  ls
+    9  cd /var/www/html
+   10  vi index.html
+   11  ls
+   12  systemctl start httpd
+   13  cd /var/log/httpd/
+   14  ls
+   15  cat access_log
+   16  ls
+   17  cat access_log
+   18  cat access_log
+   19  cat error_log
+   20  systemctl start httpd
+   21  ls
+   22  git commit -m "installing server"
+   23  cd ..
+   24  cd ..
+   25  cd ..
+   26  ls
+   27  cd ..
+   28  cd /ec2/user
+   29  sudo su ec2-user
+   30  ls
+   31  cd day6/
+   32  ls
+   33  yum install docker
+   34  cd /etc/yum.repos.d/
+   35  ls
+   36  vi amazonlinux.repo
+   37  clear
+   38  yum install httpd
+   39  systemctl start httpd
+   40  ls
+   41  cd DevOps-22days-challenge/
+   42  ls
+   43  cd day6/
+   44  ls
+   45  cd /etc/repos.d/
+   46  cd /etc/repos/
+   47  cd /etc/yum.repos.d/
+   48  ls
+   49  yum install docker
+   50  yum install httpd
+   51  systemctl start httpd
+   52  ls
+   53  ls
+   54  cd /var/www/html
+   55  ls
+   56  system ctl docker
+   57  systemctl start docker
+   58  docker imsge
+   59  docker imsge
+   60  docker imge
+   61  docker imsge
+   62  docker image
+   63  docker images
+   64  docker run centos:7
+   65  docker ps
+   66  docker images
+   67  docker ps -a
+   68  docker run -it centos:7
+   69  docker run -it centos:7
+   70  hostname
+   71  hostname -I
+   72  ls
+   73  rpm -q httpd
+   74  hostname
+   75  cd /
+   76  docker ps
+   77  docker run httpd
+   78  docker ps
+   79  docker images
+   80  docker run -d httpd
+   81  docker images
+   82  docker ps
+   83  curl 172.31.13.104
+   84  ls
+   85  docker inspect gallant_kirch
+   86  ping 172.17.0.3
+   87  docker ps
+   88  docker attach gallant_kirch 
+   89  yum install httpd
+   90  cd /var/www/html
+   91  vi index.html
+   92  systemctl start httpd
+   93  date
+   94  cal
+   95  which date
+   96  cd /usr/bin/cate/
+   97  cd /usr/bin/date/
+   98  cd /usr/bin/date
+   99  cd usr/bin
+  100  cd /usr/bin/
+  101  ls
+  102  cd /
+  103  which httpd
+  104  curl httpd
+  105  cd /usr/sbin/httpd 
+  106  cd /usr/sbin/
+  107  curl htttpd
+  108  curl httpd
+  109  cd /
+  110  curl 172.31.13.104
+  111  docker ps -a
+  112  docker stop modest_chebyshev
+  113  docker ps -a
+  114  docker ps ed73e6393cc4
+  115  docker rm ed73e6393cc4
+  116  docker ps -a
+  117  cd /bin/yum.repos.d/
+  118  cd /etc/yum.repos.d/
+  119  docker ps 
+  120  docker ps -a
+  121  docker attach amazing_mclean
+  122  docker start amazing_mclean
+  123  docker ps
+  124  docker attach amazing_mclean
+  125  yum install httpd
+  126  docker ps -a
+  127  docker start amazing_clean
+  128  docker start amazing_mclean
+  129  docker run install httpd
+  130  yum install httpd
+  131  docket attach amazing_mclean
+  132  docker attach amazing_mclean
+  133  docker commit -m "myhttpd
+  134   " amazing_mclean myhttpd1
+  135  docker ps -a
+  136  docker images
+  137  git add .
+  138  git commit -m " day 6 completed. "
+  139  git push
+  140  ssh-keygen -t rsa -b 4096 -C "kaushalkishoremnt2000@gmail.com"
+  141  eval "$(ssh-agent -s)"
+  142  ssh-add ~/.ssh/id_rsa
+  143  cat ~/.ssh/id_rsa.pub
+  144  history
+  145  git add .
+  146  git commit -m "day6 completed ."
+  147  git push .
+  148  git push day6
+  149  ls
+  150  cd day6
+  151  git add .
+  152  git commit -m "day 6 completed."
+  153  git push 
+  154  history
+[root@ip-172-31-13-104 day6]# git pull origin main
+remote: Enumerating objects: 50, done.
+remote: Counting objects: 100% (50/50), done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 48 (delta 13), reused 39 (delta 5), pack-reused 0 (from 0)
+Unpacking objects: 100% (48/48), 7.72 KiB | 564.00 KiB/s, done.
+From github.com:kaushalacts/DevOps-22days-challenge
+ * branch            main       -> FETCH_HEAD
+   d3c6235..dc7a31e  main       -> origin/main
+Updating d3c6235..dc7a31e
+Fast-forward
+ day4/reel123.txt | 2 ++
+ day5             | 1 +
+ 2 files changed, 3 insertions(+)
+ create mode 100644 day4/reel123.txt
+ create mode 160000 day5
+[root@ip-172-31-13-104 day6]# git add day6
+fatal: pathspec 'day6' did not match any files
+[root@ip-172-31-13-104 day6]# git add .
+[root@ip-172-31-13-104 day6]# git commit -m " day 6 completed."
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[root@ip-172-31-13-104 day6]# git push origin main
+Everything up-to-date
+[root@ip-172-31-13-104 day6]# history
+    1  ps -aux
+    2  netstat -tnlp
+    3  sudo su ec2-user
+    4  yum install httpd
+    5  start httpd
+    6  startctl httpd
+    7  systemctl start httpd
+    8  ls
+    9  cd /var/www/html
+   10  vi index.html
+   11  ls
+   12  systemctl start httpd
+   13  cd /var/log/httpd/
+   14  ls
+   15  cat access_log
+   16  ls
+   17  cat access_log
+   18  cat access_log
+   19  cat error_log
+   20  systemctl start httpd
+   21  ls
+   22  git commit -m "installing server"
+   23  cd ..
+   24  cd ..
+   25  cd ..
+   26  ls
+   27  cd ..
+   28  cd /ec2/user
+   29  sudo su ec2-user
+   30  ls
+   31  cd day6/
+   32  ls
+   33  yum install docker
+   34  cd /etc/yum.repos.d/
+   35  ls
+   36  vi amazonlinux.repo
+   37  clear
+   38  yum install httpd
+   39  systemctl start httpd
+   40  ls
+   41  cd DevOps-22days-challenge/
+   42  ls
+   43  cd day6/
+   44  ls
+   45  cd /etc/repos.d/
+   46  cd /etc/repos/
+   47  cd /etc/yum.repos.d/
+   48  ls
+   49  yum install docker
+   50  yum install httpd
+   51  systemctl start httpd
+   52  ls
+   53  ls
+   54  cd /var/www/html
+   55  ls
+   56  system ctl docker
+   57  systemctl start docker
+   58  docker imsge
+   59  docker imsge
+   60  docker imge
+   61  docker imsge
+   62  docker image
+   63  docker images
+   64  docker run centos:7
+   65  docker ps
+   66  docker images
+   67  docker ps -a
+   68  docker run -it centos:7
+   69  docker run -it centos:7
+   70  hostname
+   71  hostname -I
+   72  ls
+   73  rpm -q httpd
+   74  hostname
+   75  cd /
+   76  docker ps
+   77  docker run httpd
+   78  docker ps
+   79  docker images
+   80  docker run -d httpd
+   81  docker images
+   82  docker ps
+   83  curl 172.31.13.104
+   84  ls
+   85  docker inspect gallant_kirch
+   86  ping 172.17.0.3
+   87  docker ps
+   88  docker attach gallant_kirch 
+   89  yum install httpd
+   90  cd /var/www/html
+   91  vi index.html
+   92  systemctl start httpd
+   93  date
+   94  cal
+   95  which date
+   96  cd /usr/bin/cate/
+   97  cd /usr/bin/date/
+   98  cd /usr/bin/date
+   99  cd usr/bin
+  100  cd /usr/bin/
+  101  ls
+  102  cd /
+  103  which httpd
+  104  curl httpd
+  105  cd /usr/sbin/httpd 
+  106  cd /usr/sbin/
+  107  curl htttpd
+  108  curl httpd
+  109  cd /
+  110  curl 172.31.13.104
+  111  docker ps -a
+  112  docker stop modest_chebyshev
+  113  docker ps -a
+  114  docker ps ed73e6393cc4
+  115  docker rm ed73e6393cc4
+  116  docker ps -a
+  117  cd /bin/yum.repos.d/
+  118  cd /etc/yum.repos.d/
+  119  docker ps 
+  120  docker ps -a
+  121  docker attach amazing_mclean
+  122  docker start amazing_mclean
+  123  docker ps
+  124  docker attach amazing_mclean
+  125  yum install httpd
+  126  docker ps -a
+  127  docker start amazing_clean
+  128  docker start amazing_mclean
+  129  docker run install httpd
+  130  yum install httpd
+  131  docket attach amazing_mclean
+  132  docker attach amazing_mclean
+  133  docker commit -m "myhttpd
+  134   " amazing_mclean myhttpd1
+  135  docker ps -a
+  136  docker images
+  137  git add .
+  138  git commit -m " day 6 completed. "
+  139  git push
+  140  ssh-keygen -t rsa -b 4096 -C "kaushalkishoremnt2000@gmail.com"
+  141  eval "$(ssh-agent -s)"
+  142  ssh-add ~/.ssh/id_rsa
+  143  cat ~/.ssh/id_rsa.pub
+  144  history
+  145  git add .
+  146  git commit -m "day6 completed ."
+  147  git push .
+  148  git push day6
+  149  ls
+  150  cd day6
+  151  git add .
+  152  git commit -m "day 6 completed."
+  153  git push 
+  154  history
+  155  git pull origin main
+  156  git add day6
+  157  git add .
+  158  git commit -m " day 6 completed."
+  159  git push origin main
+  160  history
