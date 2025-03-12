@@ -1,0 +1,426 @@
+[200~[root@ip-172-31-13-104 day7]# history
+    1  ps -aux
+    2  netstat -tnlp
+    3  sudo su ec2-user
+    4  yum install httpd
+    5  start httpd
+    6  startctl httpd
+    7  systemctl start httpd
+    8  ls
+    9  cd /var/www/html
+   10  vi index.html
+   11  ls
+   12  systemctl start httpd
+   13  cd /var/log/httpd/
+   14  ls
+   15  cat access_log
+   16  ls
+   17  cat access_log
+   18  cat access_log
+   19  cat error_log
+   20  systemctl start httpd
+   21  ls
+   22  git commit -m "installing server"
+   23  cd ..
+   24  cd ..
+   25  cd ..
+   26  ls
+   27  cd ..
+   28  cd /ec2/user
+   29  sudo su ec2-user
+   30  ls
+   31  cd day6/
+   32  ls
+   33  yum install docker
+   34  cd /etc/yum.repos.d/
+   35  ls
+   36  vi amazonlinux.repo
+   37  clear
+   38  yum install httpd
+   39  systemctl start httpd
+   40  ls
+   41  cd DevOps-22days-challenge/
+   42  ls
+   43  cd day6/
+   44  ls
+   45  cd /etc/repos.d/
+   46  cd /etc/repos/
+   47  cd /etc/yum.repos.d/
+   48  ls
+   49  yum install docker
+   50  yum install httpd
+   51  systemctl start httpd
+   52  ls
+   53  ls
+   54  cd /var/www/html
+   55  ls
+   56  system ctl docker
+   57  systemctl start docker
+   58  docker imsge
+   59  docker imsge
+   60  docker imge
+   61  docker imsge
+   62  docker image
+   63  docker images
+   64  docker run centos:7
+   65  docker ps
+   66  docker images
+   67  docker ps -a
+   68  docker run -it centos:7
+   69  docker run -it centos:7
+   70  hostname
+   71  hostname -I
+   72  ls
+   73  rpm -q httpd
+   74  hostname
+   75  cd /
+   76  docker ps
+   77  docker run httpd
+   78  docker ps
+   79  docker images
+   80  docker run -d httpd
+   81  docker images
+   82  docker ps
+   83  curl 172.31.13.104
+   84  ls
+   85  docker inspect gallant_kirch
+   86  ping 172.17.0.3
+   87  docker ps
+   88  docker attach gallant_kirch 
+   89  yum install httpd
+   90  cd /var/www/html
+   91  vi index.html
+   92  systemctl start httpd
+   93  date
+   94  cal
+   95  which date
+   96  cd /usr/bin/cate/
+   97  cd /usr/bin/date/
+   98  cd /usr/bin/date
+   99  cd usr/bin
+  100  cd /usr/bin/
+  101  ls
+  102  cd /
+  103  which httpd
+  104  curl httpd
+  105  cd /usr/sbin/httpd 
+  106  cd /usr/sbin/
+  107  curl htttpd
+  108  curl httpd
+  109  cd /
+  110  curl 172.31.13.104
+  111  docker ps -a
+  112  docker stop modest_chebyshev
+  113  docker ps -a
+  114  docker ps ed73e6393cc4
+  115  docker rm ed73e6393cc4
+  116  docker ps -a
+  117  cd /bin/yum.repos.d/
+  118  cd /etc/yum.repos.d/
+  119  docker ps 
+  120  docker ps -a
+  121  docker attach amazing_mclean
+  122  docker start amazing_mclean
+  123  docker ps
+  124  docker attach amazing_mclean
+  125  yum install httpd
+  126  docker ps -a
+  127  docker start amazing_clean
+  128  docker start amazing_mclean
+  129  docker run install httpd
+  130  yum install httpd
+  131  docket attach amazing_mclean
+  132  docker attach amazing_mclean
+  133  docker commit -m "myhttpd
+  134   " amazing_mclean myhttpd1
+  135  docker ps -a
+  136  docker images
+  137  git add .
+  138  git commit -m " day 6 completed. "
+  139  git push
+  140  ssh-keygen -t rsa -b 4096 -C "kaushalkishoremnt2000@gmail.com"
+  141  eval "$(ssh-agent -s)"
+  142  ssh-add ~/.ssh/id_rsa
+  143  cat ~/.ssh/id_rsa.pub
+  144  history
+  145  git add .
+  146  git commit -m "day6 completed ."
+  147  git push .
+  148  git push day6
+  149  ls
+  150  cd day6
+  151  git add .
+  152  git commit -m "day 6 completed."
+  153  git push 
+  154  history
+  155  git pull origin main
+  156  git add day6
+  157  git add .
+  158  git commit -m " day 6 completed."
+  159  git push origin main
+  160  history
+  161  vi day6.txt
+  162  git add .
+  163  git commit -m "day6 completed-docker"
+  164  git config --global --edit
+  165  git push
+  166  docker ps 
+  167  docker images
+  168  ls
+  169  cd ..
+  170  mkdir day7
+  171  cd day7/
+  172  ls 
+  173  docker images
+  174  rpm -q httpd
+  175  docker login 
+  176  docker login
+  177  docker run 
+  178  docker login
+  179  docker login
+  180  docker tag myhttpd1:v1 thehiddenboy/gfgdevops22
+  181  docker images
+  182  docker run myhttpd1:latest thehiddenboy143/gfgdevops22
+  183  docker images
+  184  docker run -it myhttpd:latest
+  185  docker run -it myhttpd1:latest
+  186  docker images
+  187  docker ps -a
+  188  docker run -d myhttpd1:latest /bin/bash
+  189  docker tag myhttpd1:latest thehiddenboy143/gfgdevops22
+  190  docker images
+  191  docker push thehiddenboy143/gfgdevops22
+  192  docker pull jinny1/mario-game
+  193  docker images
+  194  docker run -d jinny1/mario-game
+  195  docker ps
+  196  docker inspect 831e40362dfe
+  197  curl 172..17.0.2
+  198  172.17.0.2
+  199  curl 172.17.0.2
+  200  docker run -d -p 8080:80 jinny1/mario-game
+  201  netstat tnlp
+  202  ps -aux
+  203  cd /usr/sbin/yum.repos.d/
+  204  systemctl start httpd
+  205  ls
+  206  docker pull
+  207  docker pull jinny1/mario-game
+  208  cd /usr/sbin/yum.repos.d/
+  209  ls
+  210  docker images
+  211  docker ps
+  212  docker stop practical_haslett
+  213  docker ps
+  214  systemstop httpd
+  215  sysemctl stop httpd
+  216  systemctl stop httpd
+  217  docker ps
+  218  docker images
+  219  netstat tnlp
+  220  netstat -tnlp
+  221  docker stop jinny1/mario-game
+  222  docker ps
+  223  docker stop d2487bc8f253
+  224  docker ps
+  225  docker images
+  226  docker run -d -p 8080:80 jinny1/mario-game
+  227  docker ps
+  228  netstat -tnlp
+  229  docker ps
+  230  docker inspect 3569892edd96
+  231  curl 172.17.0.2
+  232  docker stop 3569892edd96
+  233  docker ps
+  234  docker image
+  235  docker images
+  236  docker run -d -p 80:8080 jinny1/mario-game
+  237  docker ps
+  238  netstat -tnlp
+  239  docker ps
+  240  docker stop sad-mirzakh
+  241  docker stop c4b91ffba351
+  242  docker ps
+  243  docker images
+  244  docker ps 
+  245  ls
+  246  sudo su ec2-usr
+  247  sudo su - ec2-user
+  248  ls
+  249  cd DevOps-22days-challenge
+  250  ls
+  251  cd day7/
+  252  yum install docker -y
+  253  systemctl start docker
+  254  ls
+  255  docker images
+  256  date
+  257  cal
+  258  systemctl
+  259  rpm -q docker
+  260  rpm -q httpd
+  261  clear
+  262  docker ps
+  263  docker run --help
+  264  clear
+  265  docker run --name mynginx nginx
+  266  clear
+  267  docker ps
+  268  docker ps -a
+  269  docker run --name mynginx nginx
+  270  docker images
+  271  docker rm centos
+  272  docker rmi eeb6ee3f44bd
+  273  docker run -d --name mynginx1 nginx
+  274  docker ps
+  275  docker inspect mynginx1
+  276  curl 172.17.0.2
+  277  vi dockerfile
+  278  vi index.html
+  279  vi dockerfile
+  280  pwd
+  281  touch a.txt
+  282  ls
+  283  vi dockerfile
+  284  ls
+  285  docker --help
+  286  clear
+  287  ls
+  288  docker build -t gfghttpd:v1
+  289  docker build -t gfghttpd:v1 .
+  290  vi dockerfile
+  291  docker build -t gfghttpd:v1 .
+  292  docker images
+  293  docker run --name myos1 gfghttpd:v1
+  294  docker ps
+  295  docker ps -a
+  296  docker stop mynginx1
+  297  docker ps
+  298  docker ps -a
+  299  docker rm eager_robinson
+  300  docker rm amazing_mclean
+  301  docker rm quirky_yonath
+  302  docker ps -
+  303  docker rm gallant_kirch sharp_bardeen pensive_proskuriakova distracted_goodall practical_haslett cool_colden eager_einstein 
+  304  docker ps -a 
+  305  docker images
+  306  exit
+  307  ls
+  308  cd DevOps-22days-challenge
+  309  ls
+  310  cd day7/
+  311  ls
+  312  docker ps
+  313  docker images
+  314  docker run --name myos2 gfghttpd:v1 cal
+  315  docker run --name myos4 gfghttpd:v1 ls
+  316  docker run --name myos5 gfghttpd:v1 env
+  317  name=kaushal 
+  318  echo $name
+  319  docker run --name myos5 gfghttpd:v1 echo $x
+  320  docker run --name myos6 gfghttpd:v1 echo $x
+  321  docker ps
+  322  docker ps -a
+  323  docker rm myos6 myos5 myos2 myos1 mynginx1 mynginx sad_mirzakhani 
+  324  ls
+  325  docker ps -a 
+  326  docker history
+  327  docker run -dit centos:7
+  328  docker ps
+  329  docker stop centos:7 
+  330  docker stop maughty_margulis
+  331  docker stop naughty_margulis
+  332  ls
+  333  cd DevOps-22days-challenge/
+  334  ls
+  335  cd day7/
+  336  ls
+  337  vi dockerfile
+  338  docker build -t gfghttpd:v2 .
+  339  vi dockerfile
+  340  docker build -t gfghttpd:v2 .
+  341  docker build -t gfghttpd:v3 .
+  342  vi dockerfile
+  343  docker build -t gfghttpd:v3 .
+  344  docker ps
+  345  docker ps -a
+  346  docker images
+  347  docker run gfghttpd:v3
+  348  vi dockerfile
+  349  docker build -t gfghttpd:v3 .
+  350  docker run gfghttpd:v3
+  351  vi dockerfile
+  352  docker build -t gfghttpd:v3 .
+  353  docker run gfghttpd:v3
+  354  docker run -d gfghttpd:v3
+  355  docker ps
+  356  docker [s 
+  357  docker ps
+  358  docker inspect admiring_jepsen 
+  359  curl 172.17.0.2
+  360  docker ps 
+  361  vi dockerfile
+  362  docker build -t gfghttpd:v2 .
+  363  docker images
+  364  docker run -d gfghttpd:v2 
+  365  docker ps 
+  366  docker stop sharp_elion
+  367  docker stop admiring_jepsen
+  368  ls
+  369  docker historu
+  370  docker history gfghttpd:v2
+  371  docker history gfghttpd:v1
+  372  docker history gfghttpd:v3
+  373  docker ps
+  374  git add .
+  375  git commit -m "dockerfile structure" 
+  376  docker push
+  377  git push
+  378  vi app.py
+  379  python app.py
+  380  pip install python
+  381  sudo apt install python
+  382  sudo install python
+  383  docker install python 
+  384  install --help
+  385  sudo yum install python3 -y
+  386  sudo yum install python3 -y
+  387  python3 app.py
+  388  cd python/
+  389  mkdir python
+  390  cd python/
+  391  cp ../app.py .
+  392  ls
+  393  vi dockerfile
+  394  vi requirements.txt
+  395  vi dockerfile
+  396  docker build -t pythonapp:v1 .
+  397  vi dockerfile
+  398  vi requirements.txt
+  399  docker build -t pythonapp:v1 .
+  400  docker ps
+  401  docker images
+  402  docker run -d pythonapp:v1 
+  403  docker ps 
+  404  cat app.py
+  405  docker run pythhonapp:v1
+  406  docker run pythonapp:v1
+  407  git add .
+  408  git commit -m "deplying python app with docker"
+  409  git push
+  410  docker ls
+  411  ls
+  412  ps -aux
+  413  ps -aux | grep python3
+  414  docker ps
+  415  docker ps -a
+  416  date
+  417  echo date
+  418  echo $date
+  419  echo 'date'
+  420  echo `date`
+  421  docker rm `docker ps -a -q`
+  422  docker ps -a
+  423  cd ..
+  424  ls
+  425  history
