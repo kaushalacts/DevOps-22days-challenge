@@ -1,0 +1,184 @@
+ot@ip-172-31-6-34 /]# 
+[root@ip-172-31-6-34 /]# cd ..
+[root@ip-172-31-6-34 /]# cd ..
+[root@ip-172-31-6-34 /]# git clone https://github.com/kaushalacts/my_shell_scripting_challenge_7_days.git
+Cloning into 'my_shell_scripting_challenge_7_days'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (21/21), done.
+remote: Total 27 (delta 5), reused 21 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (27/27), 5.28 KiB | 1.76 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+[root@ip-172-31-6-34 /]# ls
+agent.jar  boot  etc   jdk-23_linux-aarch64_bin.rpm  jenkinsslave  lib64  media  my_shell_scripting_challenge_7_days  proc  run   srv  tmp  var
+bin        dev   home  jdk-23_linux-x64_bin.rpm      lib           local  mnt    opt                                  root  sbin  sys  usr
+[root@ip-172-31-6-34 /]# sudo rm my_shell_scripting_challenge_7_days
+rm: cannot remove 'my_shell_scripting_challenge_7_days': Is a directory
+[root@ip-172-31-6-34 /]# rm  my_shell_scripting_challenge_7_days
+rm: cannot remove 'my_shell_scripting_challenge_7_days': Is a directory
+[root@ip-172-31-6-34 /]# rmdir  my_shell_scripting_challenge_7_days
+rmdir: failed to remove 'my_shell_scripting_challenge_7_days': Directory not empty
+[root@ip-172-31-6-34 /]# rmdir -f  my_shell_scripting_challenge_7_days
+rmdir: invalid option -- 'f'
+Try 'rmdir --help' for more information.
+[root@ip-172-31-6-34 /]# rm  -rf  my_shell_scripting_challenge_7_days
+[root@ip-172-31-6-34 /]# ls
+agent.jar  boot  etc   jdk-23_linux-aarch64_bin.rpm  jenkinsslave  lib64  media  opt   root  sbin  sys  usr
+bin        dev   home  jdk-23_linux-x64_bin.rpm      lib           local  mnt    proc  run   srv   tmp  var
+[root@ip-172-31-6-34 /]# cd ..
+[root@ip-172-31-6-34 /]# git clone https://github.com/kaushalacts/DevOps-22days-challenge.git
+Cloning into 'DevOps-22days-challenge'...
+remote: Enumerating objects: 75, done.
+remote: Counting objects: 100% (75/75), done.
+remote: Compressing objects: 100% (52/52), done.
+remote: Total 75 (delta 18), reused 61 (delta 8), pack-reused 0 (from 0)
+Receiving objects: 100% (75/75), 20.43 KiB | 3.41 MiB/s, done.
+Resolving deltas: 100% (18/18), done.
+[root@ip-172-31-6-34 /]# ls
+DevOps-22days-challenge  bin   dev  home                          jdk-23_linux-x64_bin.rpm  lib    local  mnt  proc  run   srv  tmp  var
+agent.jar                boot  etc  jdk-23_linux-aarch64_bin.rpm  jenkinsslave              lib64  media  opt  root  sbin  sys  usr
+[root@ip-172-31-6-34 /]# cd DevOps-22days-challenge/
+[root@ip-172-31-6-34 DevOps-22days-challenge]# ls
+README.md  day4  day5  day6  day7
+[root@ip-172-31-6-34 DevOps-22days-challenge]# mkdir day8/
+[root@ip-172-31-6-34 DevOps-22days-challenge]# ls
+README.md  day4  day5  day6  day7  day8
+[root@ip-172-31-6-34 DevOps-22days-challenge]# cd day8/
+[root@ip-172-31-6-34 day8]# cp ./ .
+cp: -r not specified; omitting directory './'
+[root@ip-172-31-6-34 day8]# cp -r  ./ .
+cp: './' and './.' are the same file
+[root@ip-172-31-6-34 day8]# cp -r ./ day8/
+cp: cannot copy a directory, './', into itself, 'day8/'
+[root@ip-172-31-6-34 day8]# cp -r * day8/
+cp: cannot copy a directory, 'day8', into itself, 'day8/day8'
+[root@ip-172-31-6-34 day8]# history
+    1  ls
+    2  cd /
+    3  ls
+    4  mkdir jenkinsslave
+    5  ls
+    6  curl -sO http://65.2.70.224:8080/jnlpJars/agent.jar
+    7  ls
+    8  curl -sO http://65.2.70.224:8080/jnlpJars/agent.jar
+    9  ls
+   10  curl -sO http://65.2.70.224:8080/jnlpJars/agent.jar
+   11  curl -sO http://13.233.152.2:8080/jnlpJars/agent.jar
+   12  ls
+   13  java -jar agent.jar -url http://13.233.152.2:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave"
+   14  wget https://download.oracle.com/java/23/latest/jdk-23_linux-aarch64_bin.rpm
+   15  yum install httpd
+   16  ls
+   17  yum install jdk-23_linux-aarch64_bin.rpm
+   18  wget https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.rpm
+   19  ls
+   20  yum install jdk-23_linux-x64_bin.rpm
+   21  clear
+   22  java -jar agent.jar -url http://13.233.152.2:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave"
+   23  java -jar agent.jar -url http://13.233.152.2:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+   24  ps -aux
+   25  ls
+   26  cd /jenkinsslave
+   27  ls
+   28  cd remoting/
+   29  ls
+   30  cd ..
+   31  pwd
+   32  ls
+   33  cd workspace/
+   34  ls
+   35  yum install git 
+   36  ls
+   37  cd job1/
+   38  ls
+   39  yum whatprovides pip
+   40  yum whatprovides pip3
+   41  git status
+   42  git log
+   43  ls
+   44  history
+   45  java -jar agent.jar -url http://13.233.152.2:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+   46  cd jenkinsslave/
+   47  cd /
+   48  ls
+   49  java -jar agent.jar -url http://13.233.152.2:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+   50  ls
+   51  ps -aux | 
+   52  ps -aux 
+   53  fg
+   54  java -jar agent.jar -url http://13.233.152.2:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+   55  fg
+   56  curl -sO http://13.233.152.2:8080/jnlpJars/agent.jar
+   57  java -jar agent.jar -url http://13.233.152.2:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+   58  fg
+   59  cd jenkinsslave/
+   60  ls
+   61  cd remoting /
+   62  cd workspace/
+   63  ls
+   64  cd job1/
+   65  ls
+   66  python3 test_app.py
+   67  ls
+   68  python3 app.py
+   69  pytest test_app.py
+   70  clr 
+   71  ls
+   72  clr
+   73  cd ..
+   74  clear
+   75  cd job1/
+   76  ls
+   77  docker ps
+   78  git ?
+   79  git
+   80  yum whatprovides git 
+   81  yum install git 
+   82  cd ..
+   83  cd ..
+   84  ls
+   85  cd workspace/
+   86  ls
+   87  cd buildjob/
+   88  ls
+   89  git 
+   90  yum install git 
+   91  docker ps 
+   92  docker images
+   93  ls
+   94  ls
+   95  ls
+   96  cd /
+   97  l
+   98  ls
+   99  cd jenkinsslave/
+  100  ls
+  101  cd remoting/
+  102  ls
+  103  ls
+  104  history
+  105  curl -sO http://13.201.186.209:8080/jnlpJars/agent.jar
+  106  java -jar agent.jar -url http://13.201.186.209:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+  107  cd ..
+  108  java -jar agent.jar -url http://13.201.186.209:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+  109  ls
+  110  ls
+  111  cd emoting/
+  112  cd remoting/
+  113  ls
+  114  cd ..
+  115  cd ..
+  116  java -jar agent.jar -url http://13.201.186.209:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+  117  fg
+  118  curl -sO http://13.201.186.209:8080/jnlpJars/agent.jar
+  119  java -jar agent.jar -url http://13.201.186.209:8080/ -secret 2d9c8a21164926410e63a64db9cd1480664cd3be88e64800044802a7a1bc484b -name ec2 -webSocket -workDir "/jenkinsslave" &
+  120  fg
+  121  cd ..
+  122  cd ..
+  123  git clone https://github.com/kaushalacts/my_shell_scripting_challenge_7_days.git
+  124  ls
+  125  sudo rm my_shell_scripting_challenge_7_days
+  126  rm  my_shell_scripting_challenge_7_days
+  127  rmdir  my_shell_scripting_challenge_7_days
+  128  rmdir -f  my_shell_scripting_challenge_7_day
+
