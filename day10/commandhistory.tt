@@ -1,0 +1,196 @@
+[root@ip-172-31-5-172 day10]# history
+    1  cd /
+    2  ls
+    3  cd DevvOps-22days-challenge/
+    4  cd DevOps-22days-challenge/
+    5  ls
+    6  cd day10/
+    7  ls
+    8  docker run -dit --name os1 centos:7
+    9  docker run -dit --name os2 centos:7
+   10  git add .
+   11  git commit -m "sonarqube"
+   12  git push
+   13  ls
+   14  cd /
+   15  git clone https://github.com/kaushalacts/DevOps-22days-challenge.git
+   16  yum install git
+   17  git clone https://github.com/kaushalacts/DevOps-22days-challenge.git
+   18  ls
+   19  cd DevOps-22days-challenge/
+   20  ls
+   21  mkdir day10
+   22  cd day10/
+   23  yum install dockre -y
+   24  yum install docker -y
+   25  systemctl start docker 
+   26  ls
+   27  sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   28  sudo chmod +x /usr/local/bin/docker-compose
+   29  docker-compose --version
+   30  vi Docker-Compose.yml
+   31  docker-compose.yml
+   32  Docker-Compose.yml up -d
+   33  docker-compose.yml up -d
+   34  docker-compose up -d
+   35  vi Docker-Compose.yml
+   36  ls
+   37  rm Docker-Compose.yml
+   38  ls
+   39  vi docker-compose.yml
+   40  ls
+   41  docker-compose up -d
+   42  docker compose ps
+   43  docker-compose ps
+   44  vi docker-compose.yml
+   45  docker-compose up -d
+   46  ls
+   47  docker-compose ps
+   48  docker-compose ps -a
+   49  vi docker-compose.yml
+   50  docker-compose sonarqube up -d
+   51  docker-compose up -d
+   52  docker logs sonarqube
+   53  docker logs sonarqube-database
+   54  vi docker-compose.yml
+   55  docker-compose down  -d -v
+   56  docker-compose down   -v
+   57  docker-compose down  -v
+   58  docker-compose up -d
+   59  vi docker-compose.yml
+   60  docker-compose up -d
+   61  vi docker-compose.yml
+   62  docker-compose up -d
+   63  docker-compose ps 
+   64  docker-compose down -v
+   65  vi docker-compose.yml
+   66  docker-compose up -d
+   67  vi docker-compose.yml
+   68  docker-compose up -d
+   69  docker-compose logs 
+   70  free -h
+   71  docker-compose down -v
+   72  sudo dd if=/dev/zero of=/swapfile bs=1M count=2048 
+   73  sudo chmod 600 /swapfile
+   74  sudo chmod 600 /swapfile
+   75  sudo mkswap /swapfile
+   76  sudo swapon /swapfile
+   77  vi docker-compose.yml
+   78  ls
+   79  rm docker-compose.yml -y
+   80  rm docker-compose.yml 
+   81  ls
+   82  vi docker-compose.yml
+   83  docker-compose up -d
+   84  ls
+   85  docker compose-ps
+   86  docker-compose ps
+   87  docker-compose ps
+   88  docker attach os1
+   89  docker attach os2
+   90  docker attach os2
+   91  docker network ls
+   92  docker inspect os1
+   93  docker network create --driver=bridge --subnet 192,168.100.0/24 --gateway 192.168.100.1 gfgnet
+   94  docker network ls
+   95  docker run -dit --name os3 --network gfgnet centos:7
+   96  docker network create --driver=bridge --subnet 192.168.100.0/24 --gateway 192.168.100.1 gfgnet
+   97  docker run -dit --name os3 --network gfgnet centos:7
+   98  docker run -dit --name os4 --network gfgnet centos:7
+   99  docker attach os
+  100  docker attach os4
+  101  echo $SONAR_TOKEN
+  102  ls
+  103  ls
+  104  cd /
+  105  ls
+  106  cd DevOps-22days-challenge/
+  107  ls
+  108  cd day10/
+  109  ls
+  110  docker compose ps
+  111  docker-compose ps
+  112  docker-compose up -d
+  113  docker-compose ps
+  114  ls
+  115  vi docker-compose.yml
+  116  history
+  117  ls
+  118  docker network ls
+  119  docker inspect 8b5b8f19bcf2
+  120  docker-compose.yml down -v
+  121  docker-compose down -v
+  122  docker-compose up -d
+  123  docker compose ps
+  124  docker-compose ps
+  125  docker-compose ps -a
+  126  history
+  127  docker-compose down -v 
+  128  sudo dd if=/dev/zero of=/swapfile bs=1M count=2048 
+  129  sudo chmod 600 /swapfile
+  130  sudo mkswap /swapfile
+  131  sudo swapon /swapfile
+  132  docker-compose up -d
+  133  docker-compose ps
+  134  docker-compose ps
+  135  docker-compose ps
+  136  clear
+  137  docker run -dit  -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+  138  cd /var/jenkins_home/secrets/initialAdminPassword
+  139  ls
+  140  cd ..
+  141  ls
+  142  cd ..
+  143  ls
+  144  cd DevOps-22days-challenge/
+  145  ls
+  146  cd day10/
+  147  ls
+  148  ls
+  149  docker ps -a
+  150  docker ls
+  151  ls
+  152  docker images
+  153  docker exec -it 5936 cat /var/jenkins_home/secrets/initialAdminPassword
+  154  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm yum install jdk-17.0.10_linux-x64_bin.rpm -y
+  155  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm yum install jdk-17.0.10_linux-x64_bin.rpm -y
+  156  wget https://download.oracle.com/java/17/archive/jdk-17.0.10_linux-x64_bin.rpm
+  157  yum install jdk-17.0.10_linux-x64_bin.rpm -y
+  158  ls
+  159  mkdir ec2_slave
+  160  ls
+  161  cd ec2_slave
+  162  ls
+  163  curl -sO http://13.232.178.93:8080/jnlpJars/agent.jar
+  164  cd ..
+  165  curl -sO http://13.232.178.93:8080/jnlpJars/agent.jar
+  166  java -jar agent.jar -url http://13.232.178.93:8080/ -secret 8b8e045094f71fd26e8e767a11d3e4572e655e45e6f916c7dce43d3194da1213 -name ec2 -webSocket -workDir ""
+  167  java -jar agent.jar -url http://13.232.178.93:8080/ -secret 8b8e045094f71fd26e8e767a11d3e4572e655e45e6f916c7dce43d3194da1213 -name ec2 -webSocket -workDir "" &
+  168  yum install git
+  169  docker ps -a 
+  170  docker ps 
+  171  docker ps fg
+  172  git add .
+  173  ls
+  174  cd /
+  175  ls
+  176  cd DevOps-22-days-challenge/
+  177  ls
+  178  cd DevOps-22days-challenge/
+  179  l
+  180  ls
+  181  cd day10/
+  182  ls
+  183  cd ec2_slave
+  184  ls
+  185  ls
+  186  cd ..
+  187  ls
+  188  docker ps
+  189  git add. 
+  190  git add .
+  191  ls
+  192  git commit -m "day10"
+  193  git psuh
+  194  git push
+  195  history
