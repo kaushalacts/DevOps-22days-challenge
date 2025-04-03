@@ -1,0 +1,35 @@
+1  yum install docker -y
+    2  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+    3  systemctlstart docker
+    4  systemctl start docker
+    5  docker run -p 8080:8080 -p 50000:50000 -dit --name jenkins --restart=on-failure -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts-jdk17
+    6  docker ps -a
+    7  docker ps -a
+    8  docker ps
+    9  docker eec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+   10  docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+   11  docker ps -a
+   12  docker ps -a
+   13  docker ps
+   14  docker run -it --name jenkinslave -p 81:22 centos:7
+   15  docker ps 
+   16  docker ps -a 
+   17  docker rm -f 9ff
+   18  docker ps -a 
+   19  docker run -it --name jenkinslave ubuntu:latest
+   20  docker ps -a
+   21  docker rm -f 2e
+   22  docker run -it --name jenkinslave -p 81:22 ubuntu:latest
+   23  docker ps -a
+   24  docker rm -f dc
+   25  docker run --it --name jenkinslave -p 81:22 centos:7
+   26  docker run -it --name jenkinslave -p 81:22 centos:7
+   27  docker ps -a
+   28  docker rm -f 8b
+   29  docker run -it --name jenkinslave rockylinux:8
+   30  docker stop jenkinslave
+   31  docker run -d -p 81:22 jenkinslave
+   32  docker ps -a 
+   33  docker rm -f 22e
+   34  docker run -it --name jenkinslave -p 81:22  rockylinux:8
+   35  history
