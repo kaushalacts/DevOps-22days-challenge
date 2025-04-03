@@ -1,0 +1,21 @@
+ 1  yum install openssh-server -y
+    2  history
+    3  which ssh
+    4  vi /etc/ssh/sshd_config
+    5  which sshd
+    6  yum install which -y
+    7  which sshd
+    8  /usr/sbin/sshd
+    9  which hostkey -A
+   10  ssh-keygen -A
+   11  /usr/sbin/sshd/
+   12  /usr/sbin/sshd
+   13  passwd root
+   14  yum install passwd
+   15  passwd root
+   16  mkdir /slave
+   17  hostname -i
+   18  yum install wget
+   19  wget https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-x64_bin.rpm
+   20  yum install -y jdk-17.0.8_linux-x64_bin.rpm
+   21  history
