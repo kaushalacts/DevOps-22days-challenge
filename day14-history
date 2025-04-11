@@ -1,0 +1,100 @@
+[root@ip-172-31-12-48 /]# history
+    1  cd /
+    2  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    3  ls
+    4  sudo rpm -Uvh minikube-latest.x86_64.rpm
+    5  minikube --help
+    6  minikube start 
+    7  yum install docker -y
+    8  systemctl start docker 
+    9  minikube start 
+   10  minikube start -f
+   11  minikube start fo
+   12  minikube start --force
+   13  docker ps 
+   14  docker exec -it minikube bash
+   15  docker ps 
+   16  docker ps 
+   17  docker ps 
+   18  docker exec -it minikube bash
+   19  docker ps
+   20  curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.32.0/2025-01-10/bin/darwin/amd64/kubectl
+   21  ls
+   22  chmod +x kubectl
+   23  ls
+   24  kubectl get pods
+   25  ./kubectl get pods
+   26  ./kubectl get --help
+   27  uname -m 
+   28  curl -LO "https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+   29  curl -LO https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+   30  kubectl --verzion client
+   31  kubectl --verzion client
+   32  kubectl start
+   33  ls
+   34  curl -LO https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+   35  curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.32.0/2024-12-20/bin/linux/amd64/kubectl
+   36  ls
+   37  chmod +x kubectl
+   38  ls
+   39  kubectl get pods
+   40  rm -f kubectl
+   41  ls
+   42  curl -O https://s3.ap-south-2.amazonaws.com/amazon-eks/1.32.0/2024-12-20/bin/linux/amd64/kubectl
+   43  ls
+   44  chmod +x kubectl
+   45  ls
+   46  kubectl get pods
+   47  rm -f kubectl
+   48  ls
+   49  sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+   50  ls
+   51  chmod +x kubectl
+   52  ls
+   53  kubectl get pods
+   54  ls
+   55   sudo mv kubectl /usr/local/bin/
+   56  kubectl --verzion
+   57  kubectl --version
+   58  lubectl verzion
+   59  kubectl version 
+   60  kubect lget pods 
+   61  kubectl get pods
+   62  ./kubectl get pods
+   63  ./kubectl run gfg --image=nginx
+   64  kubectl run gfg --image=nginx
+   65  kubectl get pods
+   66  kubectl describe 
+   67  ./kubectl describe pod gfg
+   68  kubectl descirbe pod gfg
+   69  kubectl describe pod gfg
+   70  kubectl logs
+   71  kubectl logs gfg
+   72  docker attach minikube
+   73  docker ps
+   74  docker exec -it minikube bash 
+   75  kubectl get pods
+   76  which date
+   77  which kubectl
+   78  cp kuubectl /usr/bin
+   79  cp kubectl /usr/bin
+   80  cp /usr/local/bin/kubectl /usr/bin
+   81  ls
+   82  which kubectl
+   83  kubectl delete pod gfg
+   84  kubectl get pods
+   85  kubectl create deployment gfgdep1 --image=nginx
+   86  kubectl get deployment
+   87  kubectl get pods
+   88  kubectl describe deployment gfgdep1
+   89  kubectl exec -it gfgdep1-7f976cc55c-7cc2d bash
+   90  kubectl exec -it gfgdep1-7f976cc55c-7cc2d --bash
+   91  kubectl exec -it gfgdep1-7f976cc55c-7cc2d -- bash
+   92  ls
+   93  kubectl get pods
+   94  kubectl get deployment
+   95  kubectl scale deployment gfgdep1 --replicas=5
+   96  kubectl get pods
+   97  kubectl get pods
+   98  ls
+   99  history
